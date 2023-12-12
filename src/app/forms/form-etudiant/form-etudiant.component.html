@@ -1,0 +1,45 @@
+<form [formGroup]="this.formStudent" (ngSubmit)="this.onSubmit()">
+    <h3>Ajouter un étudiant</h3>
+    <div class="grid">
+        <div class="champs">
+            <label for="">Nom</label>
+            <input type="text" formControlName="nom">    
+        </div>
+        <div class="champs">
+            <label for="">Prénom</label>
+            <input type="text" formControlName="prenom">    
+        </div>
+        <div class="champs">
+            <label for="">Rue</label>
+            <input type="text" formControlName="rue">    
+        </div>
+        <div class="champs">
+            <label for="">Code postal</label>
+            <input type="text" formControlName="codePostal">    
+        </div>
+        <div class="champs">
+            <label for="">Ville</label>
+            <input type="text" formControlName="ville">    
+        </div>
+        <div class="champs">
+            <label for="">Mail</label>
+            <input type="text" formControlName="mail">    
+        </div>
+        <div class="champs">
+            <label for="">Genre</label>
+            <select name="" id="" formControlName="genre">
+                <option value="Homme">Homme</option>
+                <option value="Femme">Femme</option>
+            </select>    
+        </div>
+        <div class="champs">
+            <label for="">Age</label>
+            <input type="number" name="" id="" formControlName="age">    
+        </div>
+        <div class="champs">
+            <label for="">N° étudiant</label>
+            <input type="text" name="" id="" formControlName="num">    
+        </div>
+    </div>
+    <input type="submit" value="Ajouter" class="button">
+</form>

@@ -1,0 +1,23 @@
+.grid{
+    display: grid;
+    grid-template-columns: 0.05fr repeat(2, 1fr) 0.05fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+
+    .case{
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+
+    app-etudiant{
+        grid-area: 1 / 2 / 2 / 4;
+    }
+    app-etudiant-paris{
+        grid-area: 2 / 2 / 3 / 3;
+    }
+    app-etudiant-hors-paris{
+        grid-area: 2 / 3 / 3 / 4;
+    }
+}

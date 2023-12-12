@@ -1,0 +1,28 @@
+<div class="content">
+    <img src="assets/image/etudiant.jpg" alt="">
+    <h3>Liste de tous les étudiants</h3>
+    <table>
+        <tr class="header">
+            <td>Nom</td>
+            <td>Prénom</td>
+            <td>Rue</td>
+            <td>Code postal</td>
+            <td>Ville</td>
+            <td>Mail</td>
+            <td>Genre</td>
+            <td>Age</td>
+            <td>N° Etudiant</td>
+        </tr>
+        <tr *ngFor="let etudiant of this.etudiants">
+            <td>{{etudiant.nom}}</td>
+            <td>{{etudiant.prenom}}</td>
+            <td>{{etudiant.rue}}</td>
+            <td>{{etudiant.cp}}</td>
+            <td>{{etudiant.ville}}</td>
+            <td>{{etudiant.courriel}}</td>
+            <td>{{etudiant.genre}}</td>
+            <td>{{etudiant.age}}</td>
+            <td>{{etudiant.idCard}}</td>
+        </tr>
+    </table>
+</div>

@@ -1,0 +1,14 @@
+<div class="content">
+    <img src="assets/image/cours.jpg" alt="">
+    <h3>Liste des spécialités</h3>
+    <table>
+        <tr class="header">
+            <td>Id</td>
+            <td>Libellé</td>
+        </tr>
+        <tr *ngFor="let specialite of this.specialites">
+            <td>{{specialite.idSpec}}</td>
+            <td>{{specialite.libelle}}</td>
+        </tr>
+    </table>
+</div>

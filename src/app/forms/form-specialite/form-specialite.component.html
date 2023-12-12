@@ -1,0 +1,12 @@
+<form [formGroup]="this.formSpec" (ngSubmit)="this.onSubmit()">
+    <h3>Ajouter une spécialité</h3>
+    <div class="champs">
+        <label for="id">Id</label>
+        <input type="number" id="id" formControlName="id">    
+    </div>
+    <div class="champs">
+        <label for="libelle">Libellé</label>
+        <input type="text" id="libelle" formControlName="libelle">    
+    </div>
+    <input type="submit" value="Ajouter" class="button">
+</form>
